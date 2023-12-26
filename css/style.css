@@ -9836,3 +9836,8 @@ a {
       .site-footer .social li a:hover {
         background: #000;
         color: #fff; }
+.gayAsFuck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
