@@ -31,103 +31,6 @@
 
 	<title>High School Design Work</title>
 </head>
-<style>
-	body {
-	  font-family: Arial;
-	  margin: 0;
-	}
-	
-	* {
-	  box-sizing: border-box;
-	}
-	
-	img {
-	  vertical-align: middle;
-	}
-	
-	/* Position the image container (needed to position the left and right arrows) */
-	.container {
-	  position: relative;
-	}
-	
-	/* Hide the images by default */
-	.mySlides {
-	  display: none;
-	}
-	
-	/* Add a pointer when hovering over the thumbnail images */
-	.cursor {
-	  cursor: pointer;
-	}
-	
-	/* Next & previous buttons */
-	.prev,
-	.next {
-	  cursor: pointer;
-	  position: absolute;
-	  top: 40%;
-	  width: auto;
-	  padding: 16px;
-	  margin-top: -50px;
-	  color: white;
-	  font-weight: bold;
-	  font-size: 20px;
-	  border-radius: 0 3px 3px 0;
-	  user-select: none;
-	  -webkit-user-select: none;
-	}
-	
-	/* Position the "next button" to the right */
-	.next {
-	  right: 0;
-	  border-radius: 3px 0 0 3px;
-	}
-	
-	/* On hover, add a black background color with a little bit see-through */
-	.prev:hover,
-	.next:hover {
-	  background-color: rgba(0, 0, 0, 0.8);
-	}
-	
-	/* Number text (1/3 etc) */
-	.numbertext {
-	  color: #f2f2f2;
-	  font-size: 12px;
-	  padding: 8px 12px;
-	  position: absolute;
-	  top: 0;
-	}
-	
-	/* Container for image text */
-	.caption-container {
-	  text-align: center;
-	  background-color: #222;
-	  padding: 2px 16px;
-	  color: white;
-	}
-	
-	.row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-	
-	/* Six columns side by side */
-	.column {
-	  float: left;
-	  width: 16.66%;
-	}
-	
-	/* Add a transparency effect for thumnbail images */
-	.demo {
-	  opacity: 0.6;
-	}
-	
-	.active,
-	.demo:hover {
-	  opacity: 1;
-	}
-	</style>
 <body>
 
 	<div class="site-mobile-menu site-navbar-target">
@@ -195,80 +98,98 @@
 
 
 
-	<h2 style="text-align: center;">Senior Follies 4/28/2022</h2>
-	<div class="section pb-4">
+	<div class="section">
 		<div class="container">
-			<div class="mySlides">
-			  <div class="numbertext">1 / 8</div>
-			  <img src="images/follies1.jpeg" style="width:100%">
+			<div class="row justify-content-center mb-5">
+				<div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
+					<span class="subheading mb-2 d-inline-block">04/28/2022</span>
+					<h2 class="mb-4">Senior Follies- Lighting Design/Master Electricitan</h2>
+				</div>
 			</div>
-		  
-			<div class="mySlides">
-			  <div class="numbertext">2 / 8</div>
-			  <img src="images/follies2.jpeg" style="width:100%">
-			</div>
-		  
-			<div class="mySlides">
-			  <div class="numbertext">3 / 8</div>
-			  <img src="images/follies3.jpeg" style="width:100%">
-			</div>
-			  
-			<div class="mySlides">
-			  <div class="numbertext">4 / 8</div>
-			  <img src="images/follies4.jpeg" style="width:100%">
-			</div>
-		  
-			<div class="mySlides">
-			  <div class="numbertext">5 / 8</div>
-			  <img src="images/follies5.jpeg" style="width:100%">
-			</div>
-			  
-			<div class="mySlides">
-			  <div class="numbertext">6 / 8</div>
-			  <img src="images/follies6.jpeg" style="width:100%">
-			</div>
-			<div class="mySlides">
-				<div class="numbertext">7 / 8</div>
-				<img src="images/follies7.jpeg" style="width:100%">
-			</div>
-			<div class="mySlides">
-				<div class="numbertext">8 / 8</div>
-				<img src="images/follies8.jpeg" style="width:100%">
-			</div>
-			<a class="prev" onclick="plusSlides(-1)">❮</a>
-			<a class="next" onclick="plusSlides(1)">❯</a>
-		  
-			<div class="caption-container">
-			  <p id="caption"></p>
-			</div>
-		  
+
 			<div class="row">
-			  <div class="column">
-				<img class="demo cursor" src="images/follies1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-			  </div>
-			  <div class="column">
-				<img class="demo cursor" src="images/follies2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-			  </div>
-			  <div class="column">
-				<img class="demo cursor" src="images/follies3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-			  </div>
-			  <div class="column">
-				<img class="demo cursor" src="images/follies4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-			  </div>
-			  <div class="column">
-				<img class="demo cursor" src="images/follies5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-			  </div>    
-			  <div class="column">
-				<img class="demo cursor" src="images/follies6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-			  </div>
-			  <div class="column">
-				<img class="demo cursor" src="images/follies7.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
-			  </div>
-			  <div class="column">
-				<img class="demo cursor" src="images/follies8.jpeg" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
-			  </div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+							<a href="images/follies1.jpeg" class="media-1 glightbox">
+								<img src="images/follies1.jpeg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Jazz Dance</h2>
+									<span class="category">Dance</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+							<a href="images/follies3.jpeg" class="media-1 glightbox">
+								<img src="images/follies3.jpeg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Ballet</h2>
+									<span class="category">Dance</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+							<a href="images/follies4.jpeg" class="media-1 glightbox">
+								<img src="images/follies4.jpeg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Ballet</h2>
+									<span class="category">Dance</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+							<a href="images/follies5.jpeg" class="media-1 glightbox">
+								<img src="images/follies5.jpeg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Making fun of someone &#40;I don't remember&#41;</h2>
+									<span class="category">Acting</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+							<a href="images/follies6.jpeg" class="media-1 glightbox">
+								<img src="images/follies6.jpeg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Making fun of someone &#40;I don't remember&#41;</h2>
+									<span class="category">Acting</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+							<a href="images/follies7.jpeg" class="media-1 glightbox">
+								<img src="images/follies7.jpeg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Making fun of someone &#40;I don't remember&#41;</h2>
+									<span class="category">Acting</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+							<a href="images/follies8.jpeg" class="media-1 glightbox">
+								<img src="images/follies8.jpeg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Making fun of someone &#40;I don't remember&#41;</h2>
+									<span class="category">Acting</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+							<a href="images/follies2.jpeg" class="media-1 glightbox">
+								<img src="images/follies2.jpeg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Closing Song</h2>
+									<span class="category">Singing</span>
+								</div>
+							</a>
+						</div>
+
+
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
 
 	<div class="section bg-light">
 		<div class="container">
@@ -401,6 +322,5 @@
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/custom.js"></script>
-	<script src="js/gallery.js"></script>
 </body>
 </html>
